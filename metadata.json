@@ -1,0 +1,6 @@
+{
+  "name": "Desert Moto Rider",
+  "description": "Action-packed physics-based desert dirt bike game across golden dunes and rocky trails with stunt mechanics and customizable rides.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --sat: env(safe-area-inset-top, 0px);
+  --sar: env(safe-area-inset-right, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  inset: 0;
+  touch-action: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: auto;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+
+/* Safe area padding utilities for notches, Dynamic Island, and home indicators */
+.notch-safe-left {
+  padding-left: max(0.75rem, env(safe-area-inset-left, 0px));
+}
+.notch-safe-right {
+  padding-right: max(0.75rem, env(safe-area-inset-right, 0px));
+}
+.notch-safe-top {
+  padding-top: max(0.5rem, env(safe-area-inset-top, 0px));
+}
+.notch-safe-bottom {
+  padding-bottom: max(0.5rem, env(safe-area-inset-bottom, 0px));
+}
+.notch-safe-x {
+  padding-left: max(0.75rem, env(safe-area-inset-left, 0px));
+  padding-right: max(0.75rem, env(safe-area-inset-right, 0px));
+}
+.notch-safe-all {
+  padding-top: max(0.5rem, env(safe-area-inset-top, 0px));
+  padding-bottom: max(0.5rem, env(safe-area-inset-bottom, 0px));
+  padding-left: max(0.75rem, env(safe-area-inset-left, 0px));
+  padding-right: max(0.75rem, env(safe-area-inset-right, 0px));
+}
+
